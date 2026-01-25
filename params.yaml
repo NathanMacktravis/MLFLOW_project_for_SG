@@ -1,9 +1,9 @@
 # Pour les configurations du modèle 
-AUGMENTATION: True
-IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
+AUGMENTATION: True # Pour créer artificiellement de nouvelles images à partir de celles existantes
+IMAGE_SIZE: [224, 224, 3] # comme mentionné dans la documentationVGG 16 model  
 BATCH_SIZE: 16
-INCLUDE_TOP: False
-EPOCHS: 1
-CLASSES: 2
+INCLUDE_TOP: False #Pour ne pas inclure la partie Full connected du modèle et customiser nous-même
+EPOCHS: 10
+CLASSES: 2 # Nombre de classes qu'on cherche à prédire 
 WEIGHTS: imagenet
 LEARNING_RATE: 0.01
