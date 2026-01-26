@@ -1,7 +1,7 @@
 # Pour les configurations du modèle 
 AUGMENTATION: True # Pour créer artificiellement de nouvelles images à partir de celles existantes
 IMAGE_SIZE: [224, 224, 3] # comme mentionné dans la documentationVGG 16 model  
-BATCH_SIZE: 16
+BATCH_SIZE: 15
 INCLUDE_TOP: False #Pour ne pas inclure la partie Full connected du modèle et customiser nous-même
 EPOCHS: 3
 CLASSES: 2 # Nombre de classes qu'on cherche à prédire 
