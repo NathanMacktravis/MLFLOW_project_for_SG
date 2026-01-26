@@ -154,3 +154,89 @@ x==========x]
 [2026-01-25 20:37:53,007: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2026-01-26 09:52:22,265: INFO: main: >>>>>> stage Data Ingestion started <<<<<<]
+[2026-01-26 09:52:22,267: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:52:22,267: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:52:22,267: INFO: common: created directory at: artifacts]
+[2026-01-26 09:52:22,267: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-26 09:52:22,267: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-26 09:52:28,888: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-26 09:52:29,082: INFO: main: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]
+[2026-01-26 09:52:29,082: INFO: main: *******************]
+[2026-01-26 09:52:29,082: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-26 09:52:29,083: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:52:29,083: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:52:29,083: INFO: common: created directory at: artifacts]
+[2026-01-26 09:52:29,083: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-26 09:52:29,240: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:52:29,290: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:52:29,331: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-26 09:52:29,331: INFO: main: *******************]
+[2026-01-26 09:52:29,331: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-26 09:52:29,332: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:52:29,333: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:52:29,333: INFO: common: created directory at: artifacts]
+[2026-01-26 09:52:29,333: INFO: common: created directory at: artifacts/training]
+[2026-01-26 09:52:29,380: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-26 09:53:05,158: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:53:05,195: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-26 09:53:05,195: INFO: main: *******************]
+[2026-01-26 09:53:05,195: INFO: main: >>>>>> stage Evaluation started <<<<<<]
+[2026-01-26 09:53:05,199: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:53:05,200: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:53:05,200: INFO: common: created directory at: artifacts]
+[2026-01-26 09:53:05,238: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-26 09:53:10,662: INFO: common: json file saved at: scores.json]
+[2026-01-26 09:53:10,662: INFO: common: json file saved at: scores.json]
+[2026-01-26 09:53:10,662: INFO: main: >>>>>> stage Evaluation completed <<<<<<
+
+x==========x]
+[2026-01-26 09:57:16,247: INFO: main: >>>>>> stage Data Ingestion started <<<<<<]
+[2026-01-26 09:57:16,248: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:57:16,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:57:16,248: INFO: common: created directory at: artifacts]
+[2026-01-26 09:57:16,248: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-26 09:57:16,248: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-26 09:57:22,028: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-26 09:57:22,212: INFO: main: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]
+[2026-01-26 09:57:22,212: INFO: main: *******************]
+[2026-01-26 09:57:22,212: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-26 09:57:22,213: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:57:22,213: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:57:22,213: INFO: common: created directory at: artifacts]
+[2026-01-26 09:57:22,213: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-26 09:57:22,360: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:57:22,387: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:57:22,407: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-26 09:57:22,407: INFO: main: *******************]
+[2026-01-26 09:57:22,407: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-26 09:57:22,407: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:57:22,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:57:22,408: INFO: common: created directory at: artifacts]
+[2026-01-26 09:57:22,408: INFO: common: created directory at: artifacts/training]
+[2026-01-26 09:57:22,448: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-26 09:57:58,300: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-01-26 09:57:58,330: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-26 09:57:58,330: INFO: main: *******************]
+[2026-01-26 09:57:58,330: INFO: main: >>>>>> stage Evaluation started <<<<<<]
+[2026-01-26 09:57:58,333: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-26 09:57:58,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-26 09:57:58,335: INFO: common: created directory at: artifacts]
+[2026-01-26 09:57:58,375: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-26 09:58:03,898: INFO: common: json file saved at: scores.json]
+[2026-01-26 09:58:03,898: INFO: common: json file saved at: scores.json]
+[2026-01-26 09:58:29,899: INFO: main: >>>>>> stage Evaluation completed <<<<<<
+
+x==========x]
