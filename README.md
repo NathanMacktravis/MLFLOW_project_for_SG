@@ -30,7 +30,7 @@ Le projet couvre l’ensemble du cycle de vie d’un modèle de Machine Learning
 Cloner le dépôt
 
 ```bash
-https://github.com/krishnaik06/Kidney-Disease-Classification-Deep-Learning-Project
+https://github.com/NathanMacktravis/MLFLOW_project_for_SG
 ```
 
 ### ÉTAPE 01 – Créer un environnement conda après avoir ouvert le dépôt
