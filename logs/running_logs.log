@@ -336,3 +336,105 @@ x==========x]
 [2026-01-26 21:42:33,632: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2026-01-27 13:34:11,248: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.200.25.222:8080]
+[2026-01-27 13:34:11,249: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-27 13:34:19,167: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:34:19] "GET / HTTP/1.1" 200 -]
+[2026-01-27 13:34:24,814: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask_cors/decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/app.py", line 48, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/src/cnnClassifier/pipeline/prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/keras/src/legacy/saving/legacy_h5_format.py", line 118, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/h5py/_hl/files.py", line 566, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 104, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model/model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2026-01-27 13:34:24,818: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:34:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-01-27 13:34:38,024: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:34:38] "GET / HTTP/1.1" 200 -]
+[2026-01-27 13:34:58,661: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/flask_cors/decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/app.py", line 48, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/src/cnnClassifier/pipeline/prediction.py", line 17, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/keras/src/saving/saving_api.py", line 196, in load_model
+    return legacy_h5_format.load_model_from_hdf5(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/keras/src/legacy/saving/legacy_h5_format.py", line 118, in load_model_from_hdf5
+    f = h5py.File(filepath, mode="r")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/h5py/_hl/files.py", line 566, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanwandji/Documents/GitHub/MLFLOW_project_for_SG/.env/lib/python3.12/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 104, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to synchronously open file (unable to open file: name = 'model/model.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2026-01-27 13:34:58,663: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:34:58] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-01-27 13:36:03,028: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:36:03] "GET / HTTP/1.1" 200 -]
+[2026-01-27 13:38:52,241: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.200.25.222:8080]
+[2026-01-27 13:38:52,241: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-01-27 13:39:01,666: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:39:01] "GET / HTTP/1.1" 200 -]
+[2026-01-27 13:39:11,119: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-27 13:39:11,378: INFO: _internal: 127.0.0.1 - - [27/Jan/2026 13:39:11] "POST /predict HTTP/1.1" 200 -]
