@@ -51,6 +51,6 @@ def predictRoute():
 
 if __name__ == "__main__":
     # Pour démarrer l'application flask 
-    clApp = ClientApp()
-    app.run(host='0.0.0.0', port=8080) #for AWS
+    clApp = ClientApp() 
+    app.run(host='0.0.0.0', port=8080)
 
