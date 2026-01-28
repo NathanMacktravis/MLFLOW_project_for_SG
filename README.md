@@ -4,7 +4,7 @@
 
 Ce projet vise à développer un pipeline de **classification des maladies rénales à partir d’images médicales** à l’aide d’un modèle de Deep Learning. Il illustre les bonnes pratiques **MLOps** en combinant **DVC** pour le versionnement des données et des pipelines, **MLflow** pour le suivi et la traçabilité des expériences, ainsi que **Flask** pour le déploiement du modèle sous forme d’API.  
 
-Le projet couvre l’ensemble du cycle de vie d’un modèle de Machine Learning/Deep Learning classique : ingestion des données, entraînement, évaluation et mise à disposition via une application. Il n’est pas entièrement finalisé, car le déploiement **CI/CD avec Docker sur AWS** n’a pas été implémenté, principalement par manque de temps 😆
+Le projet couvre l’ensemble du cycle de vie d’un modèle de Machine Learning/Deep Learning classique : ingestion des données, entraînement, évaluation et mise à disposition via une application. Il n’est pas entièrement finalisé, car le déploiement **CI/CD avec Docker sur AWS** n’a pas été implémenté
 
 ---
 
